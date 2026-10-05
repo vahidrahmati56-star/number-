@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>کالبدشکافی موتور هوندا CG125</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#efede6;--panel:#fff;--ink:#1d2329;--mute:#5d6770;--st:#c3cad1;--ln:#59626b;--bore:#dfe4e8;--acc:#ff8a1f;--accf:#ffc27a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161a;--panel:#1c2228;--ink:#e8ecef;--mute:#98a3ad;--st:#6b7782;--ln:#aab4bd;--bore:#0c0f12}}
+:root[data-theme="dark"]{--bg:#12161a;--panel:#1c2228;--ink:#e8ecef;--mute:#98a3ad;--st:#6b7782;--ln:#aab4bd;--bore:#0c0f12}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.8;padding:14px 12px 40px;max-width:560px;margin-inline:auto}
+h1{font-size:22px;font-weight:900;margin:4px 0 0;line-height:1.5}
+.sub{color:var(--mute);font-size:13px;margin:0 0 12px}
+.tabs{display:flex;gap:6px;margin-bottom:8px}
+button,select{font:inherit;color:inherit}
+.tabs button{flex:1;padding:8px 6px;border-radius:12px;border:1.5px solid var(--ln);background:none;font-weight:700;font-size:13px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.box{background:var(--panel);border-radius:18px;padding:8px;box-shadow:0 1px 0 rgba(0,0,0,.08)}
+svg{display:block;width:100%;height:auto}
+[data-s="1"]{--c:#2fb58f}[data-s="2"]{--c:#d9608c}[data-s="3"]{--c:#5b9bd5}[data-s="4"]{--c:#b07be0}[data-s="5"]{--c:#e8744f}[data-s="6"]{--c:#d8c433}[data-s="7"]{--c:#d99a2b}
+[data-p]{fill:var(--st);stroke:var(--c);stroke-width:1.5;cursor:pointer;transition:opacity .2s}
+.n{fill:none}.ln{fill:none;stroke-linecap:round}
+.sel{stroke:var(--acc)!important;fill:var(--accf)!important}.sel:not(.ln){stroke-width:3.2!important}.sel.n,.sel.ln{fill:none!important}
+body.hs svg [data-p]:not(.sel){opacity:.28}
+.ctl{display:flex;align-items:center;gap:10px;margin:10px 2px 2px;direction:ltr}
+.ctl button{width:42px;height:36px;border-radius:10px;border:0;background:var(--acc);font-weight:900;cursor:pointer;color:#3a1a00}
+.ctl input{flex:1;accent-color:var(--acc)}
+#stg{font-size:14px;font-weight:700;margin:4px 2px 0}#stg small{display:block;font-weight:400;color:var(--mute);font-size:12.5px}
+#card{background:var(--panel);border-radius:18px;padding:14px 16px;margin:12px 0;border-inline-start:6px solid var(--c,var(--ln))}
+#card h2{margin:0;font-size:18px;font-weight:900}#card p{margin:4px 0 0;font-size:14px}
+.tag{font-size:12px;color:var(--mute)}
+.bar{display:inline-block;width:60px;height:6px;border-radius:3px;background:rgba(128,128,128,.25);vertical-align:middle;overflow:hidden}
+.bar u{display:block;height:100%;background:var(--c,var(--ln));text-decoration:none}
+.row{display:flex;gap:8px;margin:8px 0}
+.row select,.row button{flex:1;padding:8px;border-radius:12px;border:1.5px solid var(--ln);background:var(--panel);font-size:13px;font-weight:700}
+.it{display:flex;align-items:center;gap:10px;width:100%;text-align:start;background:var(--panel);border:0;border-radius:12px;padding:9px 12px;margin-bottom:6px;cursor:pointer;border-inline-start:5px solid var(--c)}
+.it b{flex:1;font-size:14px}.it.on{outline:2.5px solid var(--acc)}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.spec{font-size:12.5px;color:var(--mute);background:var(--panel);border-radius:12px;padding:8px 12px;margin-bottom:12px}
+</style>
+<style>
+body{max-width:620px;padding-inline:14px}
+.hero{padding:24px 20px;border-radius:28px;background:linear-gradient(140deg,#16222b 0%,#1f4a43 62%,#ff8a1f 135%);color:#fff;margin-bottom:12px}
+.hero h1{margin:0;font-size:25px;color:#fff}.hero p{margin:6px 0 0;font-size:13px;opacity:.9;line-height:1.9}
+.nav{position:sticky;top:6px;z-index:9;display:flex;gap:4px;padding:5px;border-radius:999px;background:var(--panel);box-shadow:0 8px 24px rgba(0,0,0,.14);margin-bottom:14px}
+.nav button{flex:1;border:0;border-radius:999px;padding:10px;background:none;font-weight:900;font-size:14px;cursor:pointer;color:var(--mute)}
+.nav button.on{background:var(--ink);color:var(--bg)}
+.box{border-radius:26px;padding:10px;box-shadow:0 2px 14px rgba(0,0,0,.07)}
+#card{border-radius:24px;padding:16px 18px;border-inline-start:0;border-top:5px solid var(--c,var(--ln));box-shadow:0 2px 14px rgba(0,0,0,.07)}
+.tabs button{border-radius:999px}.it{border-radius:16px}
+.chip{display:inline-block;padding:1px 11px;border-radius:999px;background:var(--c,var(--ln));color:#111;font-size:12px;font-weight:700}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 10px}.tiles figure{margin:0;min-width:0}
+.fr{aspect-ratio:4/3;border-radius:16px;background:var(--bore);overflow:hidden}.fr svg{width:100%;height:100%;pointer-events:none}
+.tiles figcaption{font-size:12px;color:var(--mute);margin-top:4px}
+.lnks{display:flex;gap:8px}.lnks a{flex:1;text-align:center;padding:10px 6px;border-radius:14px;background:var(--ink);color:var(--bg);font-weight:700;font-size:13px;text-decoration:none}
+.ph{font-size:20px;font-weight:900;margin:6px 2px 0}
+#fchips{display:flex;gap:6px;overflow-x:auto;padding:2px;margin-bottom:10px}
+#fchips button{flex:none;padding:8px 16px;border-radius:999px;border:1.5px solid var(--ln);background:none;font-weight:700;cursor:pointer}
+#fchips button.on{background:var(--acc);border-color:var(--acc);color:#3a1a00}
+details{background:var(--panel);border-radius:18px;padding:12px 14px;margin-bottom:8px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+summary{cursor:pointer;display:flex;gap:8px;align-items:center;list-style:none}summary::-webkit-details-marker{display:none}
+summary b{flex:1;font-size:14px;line-height:1.7}
+summary em{font-style:normal;font-size:12px;font-weight:700;padding:1px 10px;border-radius:999px;color:#111}
+.sv0{background:#2fb58f}.sv1{background:#e8b83a}.sv2{background:#ee6a5b}
+details ol{margin:6px 0;padding-inline-start:20px;font-size:14px}details li{margin-bottom:6px}details li span{margin-inline-end:8px}
+.go{font-size:12px;padding:3px 10px;border-radius:999px;border:1.5px solid var(--acc);background:none;cursor:pointer;font-weight:700}
+.chk{background:var(--bg);border-radius:12px;padding:8px 12px;font-size:13.5px}
+.warn{margin-top:12px;padding:12px 14px;border-radius:16px;background:rgba(238,106,91,.14);font-size:13px}
+</style><style>
+[data-s="8"]{--c:#4cc3d9}[data-s="9"]{--c:#9a8cf0}[data-s="10"]{--c:#79c05a}
+.how{background:var(--bg);border-radius:14px;padding:10px 14px;margin:10px 0}.how b{font-size:13px}.how p{margin:2px 0 0;font-size:13.5px}
+.tabs button{font-size:12px;padding:8px 2px}
+</style></head>
+<body>
+<header class="hero"><h1>کالبدشکافی موتور هوندا CG125</h1><p>از ریزترین رینگ تا بزرگ‌ترین کارتل؛ با ویدیوی زنده، عکس مقطع، توضیح فارسی و راهنمای عیب‌یابی.</p><p>تک‌سیلندر چهارزمانه، هواخنک، حدود ۱۲۴ سی‌سی و تراکم حدود ۹ به ۱ (بسته به مدل کمی فرق می‌کند).</p></header>
+<nav class="nav"><button data-pg="x" class="on">کاوش قطعات</button><button data-pg="f">عیب‌یابی</button></nav>
+<main id="px">
+<div class="tabs"><button data-v="1" class="on">برش موتور</button><button data-v="2">کلاچ و گیربکس</button><button data-v="3">کل موتورسیکلت</button><button data-v="4">کاربراتور (برش)</button></div>
+<div class="box">
+<svg id="v1" viewBox="0 0 400 440" role="img" aria-label="برش موتور"><g id="e1">
+<g data-s="3"><path data-p="case" d="M120 240H280V400Q280 420 260 420H140Q120 420 120 400Z"/></g>
+<g data-s="7"><rect data-p="sump" x="128" y="372" width="144" height="40" rx="8"/><rect data-p="oil" x="134" y="392" width="132" height="14" rx="4" style="fill:#e0a43a;fill-opacity:.85"/><circle data-p="oilpump" cx="250" cy="378" r="9"/><rect data-p="strainer" x="160" y="376" width="34" height="8" rx="2" style="stroke-dasharray:3 2"/></g>
+<g data-s="2"><rect data-p="block" x="146" y="130" width="108" height="115"/><g id="fb" data-p="fins"></g><rect data-p="liner" x="160" y="130" width="80" height="112" style="fill:var(--bore)"/></g>
+<g data-s="1"><rect data-p="gasket" x="146" y="126" width="108" height="5" style="fill:var(--ln)"/><rect data-p="head" x="146" y="52" width="108" height="74"/><g id="fh" data-p="fins" data-s="2"></g>
+<path data-p="chamber" d="M162 127Q200 104 238 127Z" style="fill:var(--bore)"/><rect data-p="cover" x="140" y="26" width="120" height="28" rx="7"/></g>
+<g data-s="5"><path data-p="inport" class="ln" d="M254 88L232 98L226 122" style="stroke-width:9;stroke:#5aa0e0;opacity:.8"/><path data-p="expo" class="ln" d="M146 88L168 98L174 122" style="stroke-width:9;stroke:#e8744f;opacity:.8"/>
+<rect data-p="carb" x="258" y="70" width="44" height="36" rx="6"/><rect data-p="air" x="308" y="60" width="46" height="56" rx="9"/>
+<path data-p="muffler" class="ln" d="M146 88H112Q98 88 98 102V250" style="stroke-width:9"/><rect data-p="muffler" x="80" y="250" width="36" height="112" rx="14"/></g>
+<g data-s="3"><path data-p="chain" class="n" d="M187 41L172 282M213 41L228 282" style="stroke-dasharray:5 3;stroke-width:2.5"/><circle data-p="chain" class="n" cx="200" cy="41" r="14" style="stroke-dasharray:3 2"/><circle data-p="chain" class="n" cx="200" cy="282" r="31" style="stroke-dasharray:3 2"/><rect data-p="tens" x="146" y="168" width="10" height="46" rx="4"/></g>
+<g data-s="1"><g id="cam"><circle data-p="cam" cx="200" cy="41" r="8"/><ellipse data-p="cam" cx="200" cy="34" rx="5" ry="9"/></g>
+<g id="ro1"><rect data-p="rocker" x="164" y="53" width="30" height="6" rx="3"/></g><g id="ro2"><rect data-p="rocker" x="206" y="53" width="30" height="6" rx="3"/></g>
+<g id="ve"><line data-p="vexh" class="ln" x1="178" y1="58" x2="178" y2="122" style="stroke-width:3"/><rect data-p="vexh" x="166" y="122" width="24" height="5" rx="2"/></g>
+<g id="vi"><line data-p="vint" class="ln" x1="222" y1="58" x2="222" y2="122" style="stroke-width:3"/><rect data-p="vint" x="210" y="122" width="24" height="5" rx="2"/></g>
+<path id="sp1" data-p="spring" class="ln" style="stroke-width:2"/><path id="sp2" data-p="spring" class="ln" style="stroke-width:2"/></g>
+<g data-s="6"><rect data-p="plug" x="196" y="64" width="8" height="52" rx="2"/><path data-p="plug" class="ln" d="M200 116V124" style="stroke-width:3"/><circle id="spk" cx="200" cy="122" r="0" style="fill:#ffe34d;pointer-events:none"/><circle data-p="mag" class="n" cx="200" cy="282" r="60" style="stroke-dasharray:4 4;stroke-width:2.5"/></g>
+<rect id="gas" x="160" y="130" width="80" height="10" style="pointer-events:none"/><path id="gas2" d="M162 127Q200 104 238 127Z" style="pointer-events:none"/>
+<g data-s="3"><g id="cr"><path data-p="crank" d="M148 282A52 52 0 0 0 252 282Z"/><circle data-p="crank" cx="200" cy="282" r="22"/><circle data-p="crankpin" cx="200" cy="256" r="10"/></g><circle data-p="mainbrg" class="n" cx="200" cy="282" r="19" style="stroke-width:4"/>
+<line id="rod" data-p="rod" class="ln" x1="200" y1="156" x2="200" y2="256" style="stroke-width:10"/><circle id="rb" data-p="rod" cx="200" cy="256" r="13"/></g>
+<g id="pg"><g data-s="2"><rect data-p="piston" x="162" y="134" width="76" height="52" rx="4"/><g data-p="rings" class="n"><path d="M162 140H238M162 147H238M162 154H238" style="stroke-width:2"/></g><circle data-p="pin" cx="200" cy="156" r="7"/></g></g>
+</g></svg>
+<svg id="v2" viewBox="0 0 400 320" role="img" aria-label="کلاچ و گیربکس" style="display:none"><g id="e2">
+<g data-s="4"><rect data-p="shafts" x="120" y="91" width="240" height="8"/><rect data-p="shafts" x="120" y="169" width="240" height="8"/><g id="gg" data-p="gears"></g>
+<path data-p="basket" d="M24 46H112V56H34V134H112V144H24Z"/><g data-p="clutchpack" id="cp"></g><rect id="pr" data-p="pplate" x="92" y="62" width="6" height="66"/><path id="cs" data-p="pplate" class="ln" style="stroke-width:2"/>
+<rect data-p="primary" x="114" y="55" width="9" height="80" rx="2"/><rect data-p="sprocket" x="362" y="148" width="12" height="50" rx="3"/>
+<circle data-p="kick" cx="150" cy="238" r="15"/><line data-p="kick" class="ln" x1="150" y1="238" x2="118" y2="268" style="stroke-width:5"/>
+<circle data-p="drum" cx="230" cy="282" r="26"/><path id="dg" data-p="drum" class="n" d="M210 276Q230 268 250 276M210 290Q230 282 250 290" style="stroke-width:2"/><g id="fk" data-p="forks"></g></g>
+</g></svg>
+<svg id="v3" viewBox="0 0 420 270" role="img" aria-label="کل موتورسیکلت" style="display:none"><g id="e3">
+<line x1="10" y1="249" x2="410" y2="249" style="stroke:var(--ln);stroke-width:2;opacity:.35"/>
+<g data-s="9"><path data-p="frame" class="ln" d="M158 92L300 104M158 92L190 190L284 190L305 104" style="stroke-width:6"/>
+<rect data-p="stand" x="266" y="212" width="5" height="36" rx="2" transform="rotate(8 268 212)"/>
+<path data-p="seat" d="M236 90Q270 82 320 94L324 106L240 102Z"/>
+<line id="shk" data-p="shock" class="ln" x1="302" y1="112" x2="296" y2="196" style="stroke-width:7;stroke-dasharray:3 3"/>
+<path data-p="fork" class="ln" d="M158 86L136 139" style="stroke-width:7"/>
+<path data-p="brakeped" class="ln" d="M236 226L212 242" style="stroke-width:4"/>
+<g id="sw"><line data-p="swing" class="ln" x1="276" y1="188" x2="318" y2="204" style="stroke-width:7"/>
+<circle data-p="wheel" class="n" cx="318" cy="204" r="43" style="stroke-width:9;stroke:var(--ln)"/>
+<g id="rw"><circle data-p="wheel" class="n" cx="318" cy="204" r="34" style="stroke-width:2"/><path data-p="wheel" class="ln" d="M284 204H352M318 170V238M294 180L342 228M342 180L294 228" style="stroke-width:1.5"/><circle data-p="rsprock" class="n" cx="318" cy="204" r="19" style="stroke-width:4;stroke-dasharray:3 2"/><circle cx="318" cy="168" r="3" style="fill:#e8523f;pointer-events:none"/></g>
+<circle data-p="brake" cx="318" cy="204" r="12"/></g>
+<g id="fw"><line data-p="fork" class="ln" x1="136" y1="139" x2="110" y2="204" style="stroke-width:4"/>
+<circle data-p="wheel" class="n" cx="110" cy="204" r="43" style="stroke-width:9;stroke:var(--ln)"/>
+<g id="fwh"><circle data-p="wheel" class="n" cx="110" cy="204" r="34" style="stroke-width:2"/><path data-p="wheel" class="ln" d="M76 204H144M110 170V238M86 180L134 228M134 180L86 228" style="stroke-width:1.5"/><circle cx="110" cy="168" r="3" style="fill:#e8523f;pointer-events:none"/></g>
+<circle data-p="brake" cx="110" cy="204" r="12"/></g></g>
+<g data-s="3"><path data-p="engine" d="M192 170H276V218H192ZM224 120H258V172H224Z"/></g>
+<g data-s="4"><circle data-p="sprocket" class="n" cx="240" cy="204" r="8" style="stroke-dasharray:2 2;stroke-width:3"/>
+<path data-p="kicklev" class="ln" d="M242 214L272 238" style="stroke-width:5"/><rect data-p="kicklev" x="268" y="234" width="12" height="5" rx="2"/>
+<path data-p="shiftlev" class="ln" d="M206 214L180 232" style="stroke-width:4;stroke-dasharray:4 2"/></g>
+<g data-s="9"><line id="ch1" data-p="dchain" class="ln" x1="240" y1="196" x2="318" y2="185" style="stroke-width:3;stroke-dasharray:4 3"/><line id="ch2" data-p="dchain" class="ln" x1="240" y1="212" x2="318" y2="223" style="stroke-width:3;stroke-dasharray:4 3"/></g>
+<g data-s="10"><path data-p="tank" d="M172 90Q168 70 192 68L242 70Q262 74 262 92L254 102L180 100Z"/>
+<rect data-p="ftap" x="214" y="102" width="8" height="9" rx="2"/><path data-p="ftap" class="ln" d="M218 111Q222 132 262 142" style="stroke-width:2"/>
+<path data-p="header" class="ln" d="M226 150L210 172L204 222L270 234" style="stroke-width:8"/>
+<path id="exf" class="ln" d="M226 150L210 172L204 222L270 234" style="stroke:#ff8a1f;stroke-width:3;stroke-dasharray:3 6;pointer-events:none"/>
+<path data-p="header" class="ln" d="M214 166L211 216L266 226" style="stroke-width:2;opacity:.7"/>
+<path data-p="can" d="M268 226L368 216Q380 216 380 228Q380 240 368 240L268 242Z"/>
+<rect data-p="startm" x="196" y="152" width="20" height="18" rx="4"/>
+<path data-p="wire" class="ln" d="M140 86Q190 96 250 102Q290 110 330 104" style="stroke-width:1.8;stroke-dasharray:5 2"/>
+<path data-p="lights" d="M140 76Q120 82 128 96Q136 98 144 92Z"/><rect data-p="lights" x="326" y="98" width="12" height="9" rx="2"/><circle data-p="lights" cx="136" cy="106" r="3.5"/></g>
+<g data-s="5"><rect data-p="carb" x="258" y="134" width="22" height="20" rx="4"/><rect data-p="air" x="282" y="118" width="28" height="42" rx="8"/></g>
+<g data-s="6"><rect data-p="battery" x="312" y="124" width="18" height="24" rx="3"/><rect data-p="cdi" x="312" y="152" width="14" height="10" rx="2"/></g>
+<g data-s="8"><path data-p="bar" class="ln" d="M160 86L164 72Q176 66 192 66" style="stroke-width:5"/><rect data-p="grip" x="188" y="60" width="22" height="10" rx="4"/>
+<line data-p="clever" class="ln" x1="190" y1="64" x2="172" y2="72" style="stroke-width:3;stroke-dasharray:4 2"/><line data-p="blever" class="ln" x1="188" y1="68" x2="168" y2="80" style="stroke-width:3"/>
+<path data-p="mirror" class="ln" d="M166 70L158 50" style="stroke-width:2"/><ellipse data-p="mirror" cx="156" cy="46" rx="8" ry="5"/><rect data-p="meter" x="148" y="64" width="16" height="12" rx="3"/>
+<path data-p="tcable" class="ln" d="M200 70Q246 74 266 136" style="stroke-width:2"/><path data-p="ccable" class="ln" d="M180 76Q196 130 206 168" style="stroke-width:2;stroke-dasharray:4 2"/></g>
+</g></svg>
+<svg id="v4" viewBox="0 0 400 290" role="img" aria-label="برش کاربراتور" style="display:none"><g id="e4"><g data-s="5">
+<rect data-p="cbody" x="96" y="90" width="208" height="116" rx="10"/><rect data-p="cbody" x="180" y="20" width="40" height="76" rx="4"/>
+<rect x="100" y="108" width="200" height="44" style="fill:var(--bore);pointer-events:none"/><rect x="184" y="24" width="32" height="84" style="fill:var(--bore);pointer-events:none"/>
+<path data-p="cventuri" d="M150 108Q200 128 250 108ZM150 152Q200 132 250 152Z"/>
+<rect data-p="cbowl" x="120" y="206" width="160" height="66" rx="10"/><rect x="124" y="236" width="152" height="32" rx="6" style="fill:#e0a43a;fill-opacity:.75;pointer-events:none"/>
+<rect data-p="cfloat" x="132" y="224" width="46" height="14" rx="7"/><path data-p="cfloat" class="ln" d="M178 231H246" style="stroke-width:3"/><path data-p="cfloat" d="M246 206L254 206L250 222Z"/>
+<rect data-p="cneedle" x="194" y="152" width="12" height="52" rx="2"/><rect data-p="cmain" x="190" y="204" width="20" height="10" rx="2"/>
+<g id="cs"><rect data-p="cslide" x="186" y="62" width="28" height="82" rx="3"/><line data-p="cneedle" class="ln" x1="200" y1="140" x2="200" y2="200" style="stroke-width:2.5"/></g>
+<line id="cspr" data-p="cslide" class="ln" x1="200" y1="24" x2="200" y2="62" style="stroke-width:9;stroke-dasharray:3 3"/>
+<path id="af" class="ln" d="M330 130H70" style="stroke:#5aa0e0;stroke-width:3;stroke-dasharray:6 8;pointer-events:none"/><path id="ff" class="ln" d="M200 204V152" style="stroke:#ff8a1f;stroke-width:3;stroke-dasharray:3 5;pointer-events:none"/>
+<circle data-p="cpilot" cx="140" cy="180" r="6"/><path data-p="cpilot" class="ln" d="M140 174V153" style="stroke-width:2"/><rect data-p="cscrew" x="108" y="166" width="22" height="8" rx="3"/><rect data-p="cchoke" x="262" y="164" width="14" height="30" rx="4"/>
+<text x="334" y="124" font-size="11" style="fill:var(--mute)">ورود هوا</text><text x="30" y="124" font-size="11" style="fill:var(--mute)">به سیلندر</text></g></g></svg>
+<div class="ctl" id="ctl"><button id="pl" aria-label="پخش یا توقف">❚❚</button><input id="sl" type="range" min="0" max="719" value="0" aria-label="زاویه میل‌لنگ"></div>
+<div id="stg"></div>
+</div>
+<div id="card"><h2>یک قطعه یا بخش انتخاب کن</h2><p>برای هر قطعه ویدیوی زنده، عکس مقطع و توضیح فارسی نشان داده می‌شود. از منوی «همه‌ی بخش‌ها» هم می‌توانی یک بخش کامل را ببینی.</p></div>
+<div class="row"><select id="fs" aria-label="سیستم"></select><button id="so">از ریز به درشت ⇅</button></div>
+<div id="list"></div>
+</main>
+<main id="pf" hidden>
+<h2 class="ph">عیب‌یابی از روی علامت</h2>
+<p class="sub">علامت را پیدا کن؛ علت‌ها به ترتیب احتمال آمده‌اند و دکمه‌ی «نمایش قطعه» تو را به همان قطعه می‌برد.</p>
+<div id="fchips"></div><div id="flist"></div>
+<div class="warn">این راهنما فقط برای تشخیص اولیه است. کوبش فلزی سنگین یا افت ناگهانی قدرت یعنی فوراً خاموش کن. اگر مطمئن نیستی، پیش مکانیک برو.</div>
+</main>
+<script>
+const S=['همه‌ی بخش‌ها','سرسیلندر و سوپاپ‌ها','سیلندر و پیستون','میل‌لنگ و بدنه','کلاچ و گیربکس','سوخت و اگزوز','برق و جرقه','روانکاری'];
+const P=[
+['cover',1,7,1,'درب سرسیلندر','پوشش بالای موتور؛ میل‌بادامک و اهرم‌ها را از گرد و خاک نگه می‌دارد و روغن را در خود حبس می‌کند.'],
+['head',1,8,1,'سرسیلندر','بالای موتور؛ جای سوپاپ‌ها، شمع و مجرای هوا و دود. پره‌هایش گرما را به هوا می‌دهند.'],
+['chamber',1,5,1,'محفظه‌ی احتراق','فضای کوچک بالای پیستون که مخلوط فشرده در آن می‌سوزد.'],
+['gasket',1,2,1,'واشر سرسیلندر','لایه‌ی نازک بین سر و سیلندر که جلوی نشتی گاز و روغن را می‌گیرد.'],
+['cam',1,6,1,'میل‌بادامک','با نصف دور میل‌لنگ می‌چرخد و با برجستگی‌اش سوپاپ‌ها را به‌موقع باز می‌کند.'],
+['rocker',1,4,1,'اهرم سوپاپ (راکر)','حرکت بادامک را به ساق سوپاپ می‌رساند. پیچ تنظیم روی آن، لقی سوپاپ را (حدود ۰٫۰۵ میلی‌متر؛ مقدار دقیق را از دفترچه ببین) تنظیم می‌کند.'],
+['vint',1,3,1,'سوپاپ هوا','در مرحله‌ی مکش باز می‌شود تا مخلوط هوا و بنزین وارد سیلندر شود.'],
+['vexh',1,3,1,'سوپاپ دود','در مرحله‌ی تخلیه باز می‌شود تا گاز سوخته بیرون برود؛ چون داغ‌تر است آلیاژ مقاوم‌تری دارد.'],
+['spring',1,3,1,'فنر سوپاپ','سوپاپ را بعد از فشار بادامک سریع می‌بندد. خار و رتینر آن را به ساق قفل می‌کنند و سیل لاستیکی ساق جلوی ورود روغن را می‌گیرد.'],
+['block',2,9,1,'بلوک سیلندر','استوانه‌ای که پیستون در آن بالا و پایین می‌رود.'],
+['fins',2,6,1,'پره‌های خنک‌کاری','موتور هواخنک است؛ پره‌ها سطح تماس با هوا را زیاد می‌کنند تا گرما دفع شود.'],
+['liner',2,6,1,'جداره‌ی سیلندر','سطح صیقلی و سخت که پیستون و رینگ‌ها روی آن می‌لغزند.'],
+['piston',2,6,1,'پیستون','فشار احتراق را می‌گیرد و با شاتون به میل‌لنگ می‌رساند. آلومینیومی و سبک است.'],
+['rings',2,2,1,'رینگ‌های پیستون','دو رینگ فشار جلوی نشت گاز را می‌گیرند و رینگ روغن، روغن اضافه‌ی دیواره را پاک می‌کند.'],
+['pin',2,2,1,'گژن‌پین و خارهایش','میله‌ی فولادی کوچک که پیستون را به سر کوچک شاتون وصل می‌کند؛ دو خار فنری آن را در جایش نگه می‌دارند.'],
+['rod',3,5,1,'شاتون','حرکت رفت‌وبرگشتی پیستون را به چرخش میل‌لنگ تبدیل می‌کند.'],
+['crankpin',3,2,1,'پین میل‌لنگ و بلبرینگ سوزنی','محل اتصال سر بزرگ شاتون؛ بلبرینگ سوزنی اصطکاک را کم می‌کند.'],
+['mainbrg',3,3,1,'بلبرینگ‌های اصلی','دو سر میل‌لنگ را روی کارتل نگه می‌دارند تا روان بچرخد.'],
+['crank',3,7,1,'میل‌لنگ','محور اصلی موتور؛ وزنه‌هایش لرزش را کم می‌کنند و قدرت را به کلاچ می‌دهند.'],
+['chain',3,5,1,'زنجیر تایمینگ','میل‌لنگ را به میل‌بادامک وصل می‌کند و نسبت دو به یک را نگه می‌دارد. در موتور واقعی کنار سیلندر قرار دارد.'],
+['tens',3,3,1,'سفت‌کن زنجیر','کشش زنجیر تایمینگ را ثابت نگه می‌دارد تا لق نزند.'],
+['case',3,10,1,'کارتل','بزرگ‌ترین قطعه؛ دو نیمه‌ی آلومینیومی که میل‌لنگ، گیربکس و روغن را در بر می‌گیرد.'],
+['primary',4,6,2,'چرخ‌دنده‌ی اولیه','قدرت میل‌لنگ را به سبد کلاچ می‌رساند.'],
+['basket',4,7,2,'سبد کلاچ','محفظه‌ای که دیسک‌های اصطکاکی را می‌چرخاند.'],
+['clutchpack',4,4,2,'دیسک‌های کلاچ','دیسک‌های اصطکاکی و فولادی که یک‌درمیان چیده شده‌اند؛ فشرده شوند قدرت منتقل می‌شود.'],
+['pplate',4,4,2,'صفحه‌ی فشار و فنرها','فنرها دیسک‌ها را می‌فشارند؛ با گرفتن دسته‌ی کلاچ فشار آزاد می‌شود.'],
+['shafts',4,6,2,'شافت ورودی و خروجی','دو شافت موازی که چرخ‌دنده‌ها روی آن‌ها سوارند.'],
+['gears',4,7,2,'چرخ‌دنده‌های گیربکس','جفت‌چرخ‌دنده‌هایی با اندازه‌های متفاوت (معمولاً ۴ یا ۵ سرعته)؛ دنده‌ی سنگین‌تر گشتاور و دنده‌ی بلندتر سرعت می‌دهد.'],
+['forks',4,3,2,'چنگک‌های دنده','چرخ‌دنده‌ی لغزنده را جابه‌جا می‌کنند تا دنده درگیر شود.'],
+['drum',4,4,2,'درام تعویض دنده','استوانه‌ی شیاردار که با پدال می‌چرخد و حرکت چنگک‌ها را هماهنگ می‌کند.'],
+['kick',4,5,2,'کیک‌استارت','با لگد زدن میل‌لنگ را می‌چرخاند تا موتور روشن شود.'],
+['sprocket',4,5,2,'دنده‌ی خروجی','قدرت را با زنجیر به چرخ عقب می‌رساند.'],
+['carb',5,6,1,'کاربراتور','هوا و بنزین را به نسبت درست مخلوط می‌کند؛ دریچه‌ی گاز مقدارش را تعیین می‌کند.'],
+['air',5,7,1,'فیلتر هوا','گرد و غبار را می‌گیرد تا سیلندر نساید.'],
+['inport',5,4,1,'مجرای ورودی','مسیر مخلوط تازه از کاربراتور تا سوپاپ هوا.'],
+['expo',5,4,1,'مجرای خروجی','مسیر گاز سوخته از سوپاپ دود تا لوله‌ی اگزوز.'],
+['muffler',5,8,1,'اگزوز و صداخفه‌کن','گاز داغ را بیرون می‌برد و صدای انفجار را کم می‌کند.'],
+['plug',6,3,1,'شمع','با جرقه بین دو الکترود (فاصله‌ی حدود ۰٫۶ تا ۰٫۷ میلی‌متر) مخلوط فشرده را آتش می‌زند.'],
+['mag',6,6,1,'فلایویل و مگنتو','روی سر میل‌لنگ می‌چرخد، برق جرقه و چراغ‌ها را می‌سازد و چرخش را یکنواخت می‌کند.'],
+['cdi',6,4,3,'CDI و کویل جرقه','CDI لحظه‌ی دقیق جرقه را تعیین می‌کند و کویل ولتاژ را به چند هزار ولت می‌رساند.'],
+['battery',6,6,3,'باتری و رگولاتور','برق استارت و چراغ‌ها را ذخیره می‌کند و رگولاتور ولتاژ شارژ را ثابت نگه می‌دارد.'],
+['sump',7,7,1,'مخزن روغن','روغن موتور در پایین کارتل جمع می‌شود؛ حدود یک لیتر.'],
+['oil',7,5,1,'روغن موتور','قطعات را روان، خنک و تمیز نگه می‌دارد.'],
+['oilpump',7,4,1,'پمپ روغن','روغن را می‌مکد و با فشار به میل‌لنگ و سرسیلندر می‌فرستد.'],
+['strainer',7,2,1,'فیلتر توری روغن','ذرات فلزی درشت را پیش از پمپ می‌گیرد.']];
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),fa=n=>n.toLocaleString('fa-IR'),NS='http://www.w3.org/2000/svg';
+let sys=0,view=1,sel=null,asc=true,fsys=0,phi=0,play=true;
+function mk(par,tag,at){const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e)}
+for(let y=138;y<240;y+=13){mk($('#fb'),'rect',{x:132,y,width:14,height:5});mk($('#fb'),'rect',{x:254,y,width:14,height:5})}
+for(let y=60;y<120;y+=12){mk($('#fh'),'rect',{x:134,y,width:12,height:5});mk($('#fh'),'rect',{x:254,y,width:12,height:5})}
+const zig=x=>{let d='M'+(x-7)+' 70';for(let i=0;i<8;i++)d+=' l14 4 -14 4';return d};
+$('#sp1').setAttribute('d',zig(178));$('#sp2').setAttribute('d',zig(222));
+[[150,24,54],[176,30,48],[202,36,42],[228,42,36]].forEach(([x,a,b])=>{mk($('#gg'),'rect',{x:x-7,y:95-a,width:14,height:2*a,rx:2});mk($('#gg'),'rect',{x:x-7,y:173-b,width:14,height:2*b,rx:2})});
+for(let i=0;i<7;i++)mk($('#cp'),'rect',{x:40+i*7,y:62,width:3.5,height:66,style:i%2?'fill:#7b6a55':''});
+$('#cs').setAttribute('d','M100 72l8 3-8 3 8 3 M100 94l8 3-8 3 8 3 M100 116l8 3-8 3 8 3');
+[176,202,228].forEach(x=>mk($('#fk'),'path',{d:'M'+x+' 256V190M'+(x-6)+' 190H'+(x+6),class:'ln',style:'stroke-width:2.5'}));
+function list(){const a=P.filter(p=>!fsys||p[1]==fsys).sort((a,b)=>asc?a[2]-b[2]:b[2]-a[2]);$('#list').innerHTML=a.map(p=>`<button class="it${sel==p[0]?' on':''}" data-s="${p[1]}" data-id="${p[0]}"><b>${p[4]}</b><span class="bar"><u style="width:${p[2]*10}%"></u></span></button>`).join('')}
+function setView(n){view=n;[1,2,3,4].forEach(i=>$('#v'+i).style.display=i==n?'block':'none');$('#ctl').style.display=n==2?'none':'';$('#stg').style.display=n==1?'':'none';$$('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.v==n));mark()}
+const SV=[0,1,1,1,2,1,1,1],MV=new Set('piston rings pin rod crank crankpin vint vexh cam rocker spring kick drum forks pplate'.split(' '));
+const SD=['','بالاترین بخش موتور؛ هوا را وارد و دود را خارج می‌کند و زمان باز و بسته‌شدن سوپاپ‌ها را کنترل می‌کند.','قلب موتور؛ پیستون در سیلندر بالا و پایین می‌رود و انرژی انفجار را به حرکت تبدیل می‌کند.','حرکت رفت‌وبرگشتی را به چرخش تبدیل می‌کند و بقیه‌ی قطعات را در خود نگه می‌دارد.','قدرت را قطع و وصل می‌کند و با دنده‌ها سرعت و گشتاور را تنظیم می‌کند.','مخلوط هوا و بنزین را می‌سازد و می‌رساند و گاز سوخته را بیرون می‌دهد.','جرقه را در لحظه‌ی درست می‌زند و برق چراغ‌ها و استارت را تأمین می‌کند.','قطعات متحرک را روان، خنک و تمیز نگه می‌دارد.'];
+const ENS=['','cylinder head valve train','cylinder and piston','crankshaft crankcase','clutch gearbox','carburetor exhaust','ignition magneto','oil pump lubrication'];
+const EN=Object.fromEntries(('cover:cylinder head cover|head:cylinder head|chamber:combustion chamber|gasket:head gasket|cam:camshaft|rocker:rocker arm|vint:intake valve|vexh:exhaust valve|spring:valve spring|block:cylinder block|fins:cooling fins|liner:cylinder bore|piston:piston|rings:piston rings|pin:gudgeon pin|rod:connecting rod|crankpin:crank pin|mainbrg:main bearing|crank:crankshaft|chain:cam chain|tens:cam chain tensioner|case:crankcase|primary:primary gear|basket:clutch basket|clutchpack:clutch plates|pplate:clutch pressure plate|shafts:gearbox shafts|gears:gearbox gears|forks:shift forks|drum:shift drum|kick:kick starter|sprocket:front sprocket|carb:carburetor|air:air filter|inport:intake manifold|expo:exhaust port|muffler:muffler|plug:spark plug|mag:flywheel magneto|cdi:CDI ignition coil|battery:battery regulator|sump:oil sump|oil:engine oil|oilpump:oil pump|strainer:oil strainer').split('|').map(x=>x.split(':')));
+function vbOf(els,pad){const m=$('#v'+view).getScreenCTM();let a=[1e9,1e9,-1e9,-1e9];els.forEach(e=>{const r=e.getBoundingClientRect();a=[Math.min(a[0],r.left),Math.min(a[1],r.top),Math.max(a[2],r.right),Math.max(a[3],r.bottom)]});
+const cx=((a[0]+a[2])/2-m.e)/m.a,cy=((a[1]+a[3])/2-m.f)/m.d;let w=(a[2]-a[0])/m.a+2*pad,h=(a[3]-a[1])/m.d+2*pad;w=Math.max(w,110);h=Math.max(h,82);if(w/h>4/3)h=w*.75;else w=h*4/3;return[cx-w/2,cy-h/2,w,h].map(v=>v.toFixed(1)).join(' ')}
+function lnk(q){const e=encodeURIComponent('Honda CG125 '+q);return`<div class="lnks"><a href="https://www.google.com/search?tbm=isch&q=${e}" target="_blank" rel="noopener">📷 عکس‌های واقعی</a><a href="https://www.youtube.com/results?search_query=${e}" target="_blank" rel="noopener">🎬 ویدیوی آموزشی واقعی</a></div>`}
+function media(els,pad,q){const vb=vbOf(els,pad),svg=$('#v'+view);$('#md').innerHTML=`<div class="tiles"><figure><div class="fr"><svg viewBox="${vb}"><use href="#e${view}"/></svg></div><figcaption>🎬 ویدیو: حرکت زنده‌ی همین قطعه</figcaption></figure><figure><div class="fr" id="ph"></div><figcaption>📷 عکس: نمای مقطع از نزدیک</figcaption></figure></div>`+lnk(q);
+const c=svg.cloneNode(true);c.removeAttribute('id');c.removeAttribute('style');c.removeAttribute('aria-label');c.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));c.setAttribute('viewBox',vb);$('#ph').appendChild(c)}
+function mark(){const on=e=>sel?e.dataset.p==sel:sys&&e.closest('[data-s]').dataset.s==sys;$$('#v1 [data-p],#v2 [data-p],#v3 [data-p],#v4 [data-p]').forEach(e=>e.classList.toggle('sel',!!on(e)));document.body.classList.toggle('hs',!!$('#v'+view+' .sel'))}
+function pick(id){sel=id;sys=0;const p=P.find(q=>q[0]==id);if(p[3]&&p[3]!=view)setView(p[3]);mark();const c=$('#card');c.dataset.s=p[1];c.innerHTML=`<span class="chip">${S[p[1]]}</span> <span class="tag">اندازه ${fa(p[2])} از ۱۰</span><h2>${p[4]}</h2><p>${p[5]}</p>${p[6]?'<div class="how"><b>⚙️ طرز کار</b><p>'+p[6]+'</p></div>':''}<div id="md"></div>`;
+if(p[3])media($$('#v'+view+' [data-p="'+id+'"]'),MV.has(id)?42:22,EN[id]);else $('#md').innerHTML='<p class="tag">این قطعه در نقشه نیست؛ برای دیدنش از دکمه‌های زیر استفاده کن.</p>'+lnk(EN[id]);list();c.scrollIntoView({block:'nearest',behavior:'smooth'})}
+function focusSys(n){sel=null;sys=n;setView(SV[n]);const c=$('#card');c.dataset.s=n;c.innerHTML=`<span class="chip">${S[n]}</span><h2>${S[n]}</h2><p>${SD[n]}</p><div id="md"></div>`;media([...$$('#v'+view+' [data-p]')].filter(e=>e.closest('[data-s]').dataset.s==n),14,ENS[n]);c.scrollIntoView({block:'nearest',behavior:'smooth'})}
+S.push('فرمان و کنترل‌ها','شاسی، تعلیق و ترمز','سوخت، اگزوز و برق بیرونی');SV.push(3,3,3);ENS.push('handlebar controls','frame suspension brake','fuel tank exhaust wiring');
+SD.push('فرمان، دسته‌ها، سیم‌ها و پدال‌هایی که راننده با آن‌ها موتور را هدایت و کنترل می‌کند.','اسکلت، تعلیق، چرخ‌ها، ترمز و زنجیر؛ هرچه موتور را به جاده وصل و ایمن می‌کند.','باک و شیر بنزین، اگزوز، باتری، سیم‌کشی و چراغ‌ها.');
+P.push(
+['frame',9,10,3,'شاسی (فریم)','اسکلت لوله‌ای فولادی موتورسیکلت.','همه‌ی قطعات به آن بسته می‌شوند. موتور هم بخشی از سازه است و نیروی ترمز و ناهمواری را از چرخ‌ها به تعلیق می‌رساند.'],
+['engine',3,10,3,'موتور (جعبه‌ی قدرت)','قلب موتورسیکلت که بنزین را به چرخش تبدیل می‌کند.','چهار مرحله‌ی مکش، تراکم، احتراق و تخلیه میل‌لنگ را می‌چرخانند؛ چرخش از کلاچ، گیربکس، دنده‌ی جلو و زنجیر به چرخ عقب می‌رسد. داخلش در تب «برش موتور» است.'],
+['swing',9,6,3,'بازوی عقب (سوئینگ‌آرم)','بازوی لولایی که چرخ عقب را به فریم وصل می‌کند.','دور محور لولا بالا و پایین می‌رود تا چرخ ناهمواری را دنبال کند؛ فنر و کمک‌فنر حرکتش را کنترل می‌کنند.'],
+['shock',9,4,3,'کمک‌فنر عقب','فنر و روغنی که ضربه‌ی جاده را می‌گیرند.','فنر ضربه را ذخیره می‌کند و روغن با عبور از سوراخ‌های ریز انرژی را به گرما تبدیل و نوسان‌های پشت‌سرهم را میرا می‌کند.'],
+['fork',9,6,3,'شاخک جلو (تلسکوپی)','دو لوله‌ی تو در تو که چرخ جلو را نگه می‌دارند.','لوله‌ی داخلی در خارجی می‌لغزد، فنر ضربه را می‌گیرد و روغن حرکت را آرام می‌کند. هنگام ترمز بار روی آن‌ها می‌افتد و جمع می‌شوند.'],
+['wheel',9,7,3,'چرخ (رینگ، پره و تایر)','تایر لاستیکی روی رینگ فلزی؛ تنها نقطه‌ی تماس با جاده.','پره‌ها نیرو را از توپی به رینگ می‌رسانند و چسبندگی تایر گشتاور را به حرکت و ترمز را به کاهش سرعت تبدیل می‌کند. فشار باد درست مهم‌ترین نگهداری آن است.'],
+['brake',9,5,3,'ترمز کفشکی','در توپی چرخ؛ کفشک‌ها داخل طبلک ساییده می‌شوند.','فشردن پدال یا دسته، بادامک را می‌چرخاند و کفشک‌ها را به دیواره‌ی طبلک می‌چسباند؛ اصطکاک انرژی حرکتی را به گرما تبدیل می‌کند. لقی سیم یا میله را باید تنظیم کرد.'],
+['rsprock',9,4,3,'چرخ‌دنده‌ی عقب','دنده‌ی بزرگ پشت چرخ که زنجیر را می‌گیرد.','نسبت تعداد دندانه‌هایش به دنده‌ی جلو، نسبت کاهش نهایی را می‌سازد: دنده‌ی بزرگ‌تر یعنی شتاب بیشتر و سرعت نهایی کمتر.'],
+['dchain',9,5,3,'زنجیر انتقال قدرت','حلقه‌ی فولادی بین دنده‌ی جلو و عقب.','لینک‌ها روی دندانه‌ها می‌نشینند و قدرت را منتقل می‌کنند. روغن و کشش درست (حدود دو تا سه سانتی‌متر لقی وسط) عمرش را بالا می‌برد؛ شل بپرد، سفت بلبرینگ‌ها را می‌کشد.'],
+['tank',10,8,3,'باک بنزین','مخزن بنزین بالای موتور.','بنزین با ثقل از شیر به کاربراتور می‌رسد. دریچه‌ی تنفس زیر درپوش اجازه می‌دهد هوا جای بنزین مصرف‌شده را بگیرد؛ بسته شود، جریان بنزین قطع می‌شود.'],
+['ftap',10,3,3,'شیر بنزین و شیلنگ','شیر سه‌حالته (بسته، باز، ذخیره).','در حالت باز، بنزین از توری فیلتر به شیلنگ می‌رود. در بیشتر نسخه‌ها شیر خلأیی است و فقط وقتی موتور مکش دارد باز می‌شود. گرفتگی توری کاربراتور را گرسنه می‌کند.'],
+['header',10,6,3,'لوله‌ی اگزوز و حفاظ حرارتی','لوله‌ای که گاز داغ را از سرسیلندر به صداخفه‌کن می‌برد.','طول و قطر لوله روی موج فشار گاز و قدرت در دورهای مختلف اثر دارد. حفاظ جلوی سوختن پای سوار را می‌گیرد. نشتی در اتصال سرسیلندر صدای تق‌تق می‌دهد.'],
+['can',10,7,3,'قوطی صداخفه‌کن','محفظه‌ی بزرگ اگزوز با اتاقک‌های داخلی.','گاز داغ از لوله‌های سوراخ‌دار اتاقک‌ها می‌گذرد، منبسط و سرد می‌شود و موج صدا در هم می‌شکند. گرفتگی داخلش قدرت را می‌کشد.'],
+['seat',9,6,3,'زین','نشیمن راننده و ترک‌نشین.','اسفنج چگال ضربه را می‌گیرد و وزن را پخش می‌کند؛ زیر آن باتری و ابزار قرار دارد.'],
+['lights',10,4,3,'چراغ‌ها (جلو، عقب و راهنما)','چراغ جلو، ترمز، راهنماها و بوق.','برق از استاتور و باتری می‌آید و سوئیچ‌ها و رگولاتور مدارها را قطع و وصل می‌کنند. چراغ ترمز با کلید فشاری روی پدال و دسته روشن می‌شود و راهنما با رله‌ی چشمک‌زن (فلشر) می‌زند.'],
+['bar',8,7,3,'فرمان','لوله‌ی فلزی که جهت چرخ جلو را کنترل می‌کند.','چرخاندنش ستون فرمان و شاخک‌ها را می‌چرخاند. در سرعت بالا بیشتر با تمایل بدن مسیر عوض می‌شود تا چرخاندن فرمان. جای دسته‌ها، آینه‌ها و سوئیچ‌هاست.'],
+['grip',8,3,3,'دسته‌ی گاز','دسته‌ی لاستیکی سمت راست فرمان.','چرخاندنش سیم گاز را می‌کشد و اسلاید کاربراتور را بالا می‌برد؛ هوا و بنزین بیشتر یعنی دور بالاتر. فنر کاربراتور دوباره آن را می‌بندد.'],
+['clever',8,3,3,'دسته‌ی کلاچ (چپ)','اهرم سمت چپ فرمان.','سیم را می‌کشد و صفحه‌ی فشار را از دیسک‌ها دور می‌کند تا قدرت قطع شود و بتوانی دنده عوض کنی. رهاکردنش فنرها را آزاد و قدرت را وصل می‌کند.'],
+['blever',8,3,3,'دسته‌ی ترمز جلو (راست)','اهرم سمت راست فرمان.','سیم یا میله ترمز کفشکی جلو را باز می‌کند. بیشترین نیروی ترمز روی چرخ جلوست چون وزن هنگام ترمز به جلو می‌آید.'],
+['mirror',8,2,3,'آینه‌ها','دید عقب.','آینه‌ی محدب میدان دید بزرگ‌تری می‌دهد اما فاصله را دورتر نشان می‌دهد؛ قبل از حرکت باید تنظیم باشد.'],
+['meter',8,4,3,'سرعت‌سنج و چراغ‌های هشدار','صفحه‌ی نشان‌دهنده‌ی سرعت.','سیم مارپیچ از چرخ جلو آهنربا را می‌چرخاند و با القای جریان گردابی عقربه را می‌چرخاند؛ در مدل‌های جدید حسگر الکترونیکی است. چراغ‌های خلاص و راهنما هم همین‌جاست.'],
+['tcable',8,2,3,'سیم گاز','کابل فولادی داخل روکش.','حرکت دسته‌ی گاز را به اسلاید کاربراتور می‌رساند. چند میلی‌متر لقی لازم است تا با چرخش فرمان گاز نخورد؛ گیرکردنش خطرناک است.'],
+['ccable',8,2,3,'سیم کلاچ','کابل کلاچ.','اهرم کلاچ روی پوشش موتور را می‌کشد. خیلی شل باشد کلاچ کامل آزاد نمی‌شود و دنده سخت جا می‌رود؛ خیلی سفت باشد کلاچ سر می‌خورد.'],
+['startm',10,5,3,'استارت برقی (در بعضی نسخه‌ها)','موتور الکتریکی کوچک.','با فشار دکمه، جریان باتری از رله‌ی استارت به موتور می‌رود و چرخ‌دنده‌اش میل‌لنگ را می‌چرخاند؛ بعد از روشن‌شدن، کلاچ یک‌طرفه آن را جدا می‌کند.'],
+['wire',10,3,3,'سیم‌کشی و فیوز','مجموعه‌ی سیم‌های رنگی.','هر رنگ مدار مشخصی دارد و فیوز با ذوب‌شدن جلوی آتش‌سوزی را می‌گیرد. اتصال‌های زنگ‌زده و شل بیشترین خرابی برق است.'],
+['kicklev',4,5,3,'هندل کیک‌استارت','پدالی که با لگد روی آن موتور را روشن می‌کنی.','حرکتش اول سبک و بعد سخت می‌شود چون تراکم پیستون را حس می‌کنی. چرخ‌دنده و ضامن داخل کارتل حرکتش را به میل‌لنگ می‌رسانند و فنر در برگشت آن را جدا می‌کند. پایین نمی‌رود؟ بخش عیب‌یابی را ببین.'],
+['shiftlev',4,3,3,'پدال تعویض دنده','اهرم سمت چپ.','بالا یا پایین‌بردنش درام شیاردار را یک پله می‌چرخاند تا چنگک‌ها چرخ‌دنده‌ی بعدی را درگیر کنند. الگوی معمول: ۱ - خلاص - ۲ - ۳ - ۴ (یا ۵).'],
+['brakeped',9,3,3,'پدال ترمز عقب','پدال سمت راست.','میله یا سیم را می‌کشد و کفشک‌های عقب را باز می‌کند و هم‌زمان کلید چراغ ترمز را می‌زند.'],
+['stand',9,3,3,'پایه‌ی کنار','پایه‌ی جانبی.','موتور را هنگام توقف نگه می‌دارد و فنرش آن را جمع می‌کند تا در حرکت به زمین نخورد.'],
+['cbody',5,8,4,'بدنه‌ی کاربراتور','قطعه‌ی ریخته‌گری آلومینیومی.','لوله‌ی هوا، برج اسلاید و کاسه‌ی بنزین را در خود دارد. هوا به‌خاطر مکش پیستون از آن می‌گذرد.'],
+['cventuri',5,5,4,'ونتوری','تنگی مسیر هوا.','تنگ‌شدن مسیر سرعت هوا را بالا و فشار را کم می‌کند؛ این فشار کم (اصل برنولی) بنزین را از نازل بیرون می‌مکد.'],
+['cslide',5,6,4,'اسلاید (دریچه‌ی گاز)','پیستون عمودی که با سیم گاز بالا و پایین می‌رود.','هرچه بالاتر برود مقطع عبور هوا بزرگ‌تر و مکش بیشتر می‌شود. فنر بالایش آن را پایین می‌آورد.'],
+['cneedle',5,3,4,'سوزن و نازل سوزنی','سوزن مخروطی که با اسلاید حرکت می‌کند.','با بالارفتن اسلاید، فاصله‌ی سوزن تا دیواره‌ی نازل بیشتر می‌شود و بنزین بیشتری مکیده می‌شود؛ یعنی در دورهای میانی مقدار سوخت را سوزن تعیین می‌کند.'],
+['cmain',5,2,4,'جت اصلی','سوراخ کالیبره زیر نازل.','در گاز زیاد مقدار بنزین را محدود می‌کند. بزرگ‌تر یعنی مخلوط غلیظ‌تر؛ با تغییر اگزوز یا فیلتر هوا یا ارتفاع، تعویض می‌شود.'],
+['cpilot',5,2,4,'جت پیلوت (دور آرام)','جت کوچک مخصوص دور آرام.','وقتی اسلاید پایین است، بنزین از این مجرای ریز با هوا مخلوط می‌شود و کنار اسلاید بیرون می‌آید. گرفتگی‌اش علت اصلی خاموش‌شدن در دور آرام است.'],
+['cscrew',5,2,4,'پیچ هوا و پیچ دور آرام','پیچ‌های تنظیم مخلوط و دور.','پیچ مخلوط نسبت هوا به بنزین را در دور آرام تنظیم می‌کند و پیچ دور، ارتفاع پایین اسلاید را. تنظیم باید با موتور گرم باشد.'],
+['cfloat',5,3,4,'شناور و سوزن‌ولو','حفظ سطح ثابت بنزین.','با پایین‌رفتن سطح، شناور پایین می‌آید و سوزن‌ولو را باز می‌کند؛ با بالاآمدن بنزین، شناور سوزن را می‌بندد. سطح اشتباه یا سوزن خراب باعث سرریز یا کمبود بنزین می‌شود.'],
+['cbowl',5,4,4,'کاسه‌ی بنزین','مخزن کوچک زیر کاربراتور.','انبار ثابتی با سطح مشخص که جت اصلی از آن می‌مکد. پیچ تخلیه‌ی پایین برای خالی‌کردن و دیدن رسوب است.'],
+['cchoke',5,3,4,'ساکشن (چوک)','پلانجر یا دریچه‌ی استارت سرد.','مسیر هوا را تنگ یا مسیر بنزین اضافه باز می‌کند تا مخلوط غلیظ شود، چون در موتور سرد بنزین خوب تبخیر نمی‌شود. بعد از گرم‌شدن باید بسته شود.']);
+const HOW={carb:'مکش پیستون هوا را از ونتوری می‌گذراند و فشار کم، بنزین را از جت‌ها می‌مکد. داخلش را در تب «کاربراتور (برش)» ببین.',air:'هوا از المنت اسفنجی یا کاغذی می‌گذرد و گردوغبار در آن می‌ماند. فیلتر گرفته مخلوط را غلیظ و قدرت را کم می‌کند.',muffler:'گاز داغ از لوله‌های سوراخ‌دار اتاقک‌ها می‌گذرد، منبسط و سرد می‌شود و موج صدا خنثی می‌شود. بیرونش را در تب «کل موتورسیکلت» ببین.',plug:'ولتاژ بالای کویل بین دو الکترود جرقه می‌زند و مخلوط فشرده را چند درجه قبل از بالاترین نقطه‌ی پیستون آتش می‌زند.',mag:'آهنرباهای چرخان فلایویل در سیم‌پیچ‌های ثابت استاتور برق متناوب القا می‌کنند و رگولاتور آن را مستقیم و با ولتاژ ثابت می‌کند.',clutchpack:'فنرها دیسک‌ها را به هم می‌فشارند و اصطکاک قدرت را می‌رساند؛ با گرفتن دسته، فنرها آزاد و دیسک‌ها جدا می‌شوند.',oilpump:'دو روتور درونی با چرخش، حجم روغن را می‌مکند و با فشار به یاتاقان‌ها و بادامک می‌فرستد.',cam:'هر برجستگی بادامک با نصف سرعت میل‌لنگ اهرم را فشار می‌دهد و سوپاپ را باز می‌کند؛ فنر آن را می‌بندد.',cdi:'پالس سیم‌پیچ استاتور خازن CDI را شارژ می‌کند و در لحظه‌ی مناسب آن را در کویل تخلیه می‌کند تا ولتاژ به هزاران ولت برسد.',battery:'انرژی شیمیایی را برای استارت و چراغ‌ها ذخیره می‌کند؛ رگولاتور شارژ را روی حدود ۱۴ ولت نگه می‌دارد تا باتری بیش‌ازحد پر نشود.'};
+Object.entries(HOW).forEach(([k,v])=>{P.find(q=>q[0]==k)[6]=v});
+Object.assign(EN,{frame:'frame',engine:'engine',swing:'swingarm',shock:'rear shock absorber',fork:'telescopic fork',wheel:'wheel rim tyre',brake:'drum brake',rsprock:'rear sprocket',dchain:'drive chain',tank:'fuel tank',ftap:'fuel tap petcock',header:'exhaust header',can:'muffler silencer',seat:'seat',lights:'headlight taillight',bar:'handlebar',grip:'throttle grip',clever:'clutch lever',blever:'brake lever',mirror:'mirror',meter:'speedometer',tcable:'throttle cable',ccable:'clutch cable',startm:'starter motor',wire:'wiring harness',kicklev:'kick starter lever',shiftlev:'gear shift lever',brakeped:'rear brake pedal',stand:'side stand',cbody:'carburetor body',cventuri:'carburetor venturi',cslide:'carburetor slide',cneedle:'jet needle',cmain:'main jet',cpilot:'pilot jet',cscrew:'idle mixture screw',cfloat:'carburetor float needle valve',cbowl:'carburetor float bowl',cchoke:'choke enricher'});
+'swing shock fork wheel brake dchain cslide cneedle cfloat kicklev shiftlev brakeped grip clever blever'.split(' ').forEach(x=>MV.add(x));
+$('#fs').innerHTML=S.map((s,i)=>`<option value="${i}">${s}</option>`).join('');
+$('#fs').onchange=e=>{fsys=+e.target.value;list();if(fsys)focusSys(fsys);else{sel=null;sys=0;mark();$('#card').innerHTML='<h2>یک قطعه یا بخش انتخاب کن</h2><p>برای هر قطعه ویدیوی زنده، عکس مقطع و توضیح فارسی نشان داده می‌شود.</p>'}};$('#so').onclick=()=>{asc=!asc;$('#so').textContent=asc?'از ریز به درشت ⇅':'از درشت به ریز ⇅';list()};
+$('#list').onclick=e=>{const b=e.target.closest('.it');if(b)pick(b.dataset.id)};
+$('.box').onclick=e=>{const t=e.target.closest('[data-p]');if(t)pick(t.dataset.p)};
+$$('.tabs button').forEach(b=>b.onclick=()=>setView(+b.dataset.v));
+$('#pl').onclick=()=>{play=!play;$('#pl').textContent=play?'❚❚':'▶'};
+$('#sl').oninput=e=>{phi=+e.target.value};
+const ST=[['مکش','پیستون پایین می‌رود و سوپاپ هوا باز است؛ مخلوط وارد می‌شود.'],['تراکم','هر دو سوپاپ بسته‌اند و پیستون بالا می‌آید و مخلوط را فشرده می‌کند.'],['احتراق (قدرت)','شمع جرقه می‌زند و انفجار پیستون را پایین می‌راند؛ تنها مرحله‌ی تولید قدرت.'],['تخلیه','سوپاپ دود باز است و پیستون گاز سوخته را بیرون می‌راند.']];
+const lift=(a,b)=>phi>a&&phi<b?Math.sin(Math.PI*(phi-a)/(b-a))*7:0;
+function gasC(){if(phi<180)return'rgba(79,163,255,.4)';if(phi<360)return`rgba(79,163,255,${.4+.4*(phi-180)/180})`;if(phi<540)return`rgba(255,${120+(phi-360)*.4|0},31,${.9-.5*(phi-360)/180})`;return'rgba(150,150,150,.45)'}
+function frame(){const th=phi%360,r=th*Math.PI/180,px=200+26*Math.sin(r),py=282-26*Math.cos(r),yp=py-Math.sqrt(10000-(px-200)**2);
+$('#pg').setAttribute('transform',`translate(0 ${yp-156})`);$('#cr').setAttribute('transform',`rotate(${th} 200 282)`);
+$('#rod').setAttribute('y1',yp);$('#rod').setAttribute('x2',px);$('#rod').setAttribute('y2',py);$('#rb').setAttribute('cx',px);$('#rb').setAttribute('cy',py);
+$('#cam').setAttribute('transform',`rotate(${phi/2} 200 41)`);
+const li=lift(5,195),le=lift(525,715);$('#vi').setAttribute('transform',`translate(0 ${li})`);$('#ve').setAttribute('transform',`translate(0 ${le})`);
+$('#ro1').setAttribute('transform',`rotate(${le*-1.3} 164 56)`);$('#ro2').setAttribute('transform',`rotate(${li*1.3} 236 56)`);
+const g=gasC();$('#gas').setAttribute('height',Math.max(2,yp-22-130));$('#gas').style.fill=g;$('#gas2').style.fill=g;
+$('#spk').setAttribute('r',phi>346&&phi<364?9:0);
+const s=ST[Math.floor(phi/180)];$('#stg').innerHTML=`مرحله‌ی ${s[0]}<small>${s[1]}</small>`;$('#sl').value=phi}
+let last=0;function loop(t){const dt=Math.min(50,t-last);last=t;if(play){phi=(phi+dt*.09)%720}frame();frame2();frame3();frame4();requestAnimationFrame(loop)}
+function frame2(){const q=Math.sin(phi*Math.PI/90);['#pr','#cs'].forEach(i=>$(i).setAttribute('transform',`translate(${5+5*q} 0)`));$('#dg').setAttribute('transform',`rotate(${phi} 230 282)`);$('#fk').setAttribute('transform',`translate(${3*q} 0)`)}
+function frame3(){const q=Math.sin(phi*Math.PI/60),a=q*2.2*Math.PI/180,c=Math.cos(a),n=Math.sin(a),rot=(x,y)=>[276+(x-276)*c-(y-188)*n,188+(x-276)*n+(y-188)*c];
+$('#sw').setAttribute('transform',`rotate(${q*2.2} 276 188)`);$('#rw').setAttribute('transform',`rotate(${phi*3} 318 204)`);$('#fwh').setAttribute('transform',`rotate(${phi*3} 110 204)`);
+$('#fw').setAttribute('transform',`translate(${-1.9*q} ${4.6*q})`);
+const b=rot(296,196),C=rot(318,204),sh=$('#shk');sh.setAttribute('x2',b[0]);sh.setAttribute('y2',b[1]);
+const c1=$('#ch1'),c2=$('#ch2');c1.setAttribute('x2',C[0]);c1.setAttribute('y2',C[1]-19);c2.setAttribute('x2',C[0]);c2.setAttribute('y2',C[1]+19);
+c1.setAttribute('stroke-dashoffset',-phi*.7);c2.setAttribute('stroke-dashoffset',-phi*.7);$('#exf').setAttribute('stroke-dashoffset',-phi*.5)}
+function frame4(){const t=.5+.5*Math.sin(phi*Math.PI/120);$('#cs').setAttribute('transform',`translate(0 ${-40*t})`);$('#cspr').setAttribute('y2',62-40*t);
+$('#af').setAttribute('stroke-dashoffset',-phi*1.4);$('#ff').setAttribute('stroke-dashoffset',-phi*1.6);$('#ff').setAttribute('opacity',.2+.8*t)}
+const TG=['صدا','روشن‌شدن','دود و بو','رفتار موتور'],SVN=['ساده','متوسط','جدی'];
+const T=[
+[0,'تق‌تق ریز و تیز از بالای موتور (مثل چرخ خیاطی)',1,[['لقی زیاد سوپاپ‌ها','rocker'],['سایش بادامک یا اهرم','cam'],['روغن کم یا کثیف','oil']],'موتور سرد، لقی سوپاپ‌ها را با فیلر بسنج و سطح روغن را ببین.'],
+[0,'شرشر یا تق‌تق زنجیر کنار سیلندر، بیشتر در دور آرام',1,[['سفت‌کن زنجیر ضعیف','tens'],['زنجیر تایمینگ کشیده','chain']],'سفت‌کن را تنظیم یا عوض کن؛ رهایش کنی چرخ‌دنده‌ها را می‌خورد.'],
+[0,'کوبش فلزی سنگین از پایین موتور که با دور بیشتر می‌شود',2,[['یاتاقان شاتون و پین میل‌لنگ','crankpin'],['لقی شاتون','rod'],['بلبرینگ اصلی','mainbrg']],'فوراً خاموش کن؛ ادامه‌دادن موتور را نابود می‌کند. باید کارتل باز شود.'],
+[0,'تق‌تق مثل ضربه‌ی سکه هنگام شتاب',2,[['لقی پیستون و جداره','liner'],['لقی گژن‌پین','pin'],['کربن یا بنزین ضعیف (کوبش)','chamber']],'بنزین بهتر بزن و شمع با درجه‌ی حرارتی درست بگذار؛ اگر ماند سیلندر را باز کن.'],
+[0,'جیرجیر یا خرخر که با گرفتن دسته‌ی کلاچ تغییر می‌کند',1,[['دیسک‌های کلاچ ساییده','clutchpack'],['فنر یا صفحه‌ی فشار','pplate'],['لقی سبد کلاچ','basket']],'اگر صدا با گرفتن کلاچ قطع شد، مشکل از کلاچ است نه خود موتور.'],
+[0,'زوزه یا ضربه هنگام جا انداختن دنده',1,[['چرخ‌دنده‌های گیربکس','gears'],['چنگک خم‌شده','forks'],['کلاچ کامل آزاد نمی‌شود','pplate']],'کلاچ را کامل بگیر و لقی سیم را بسنج؛ بعد روغن را عوض کن.'],
+[0,'ترق‌ترق یا انفجار از اگزوز',0,[['مخلوط رقیق از کاربراتور','carb'],['نشتی هوا از مجرای ورودی','inport'],['نشتی اگزوز','muffler']],'اتصال اگزوز و لاستیک ورودی کاربراتور را برای نشتی چک کن.'],
+[1,'استارت یا کیک می‌خورد ولی روشن نمی‌شود',1,[['جرقه‌ی ضعیف یا شمع خیس','plug'],['بنزین نمی‌رسد','carb'],['CDI یا کویل خراب','cdi']],'شمع را در بیاور، به بدنه تکیه بده و ببین جرقه‌ی آبی می‌زند یا نه.'],
+[1,'سرد سخت روشن می‌شود یا بعد از چند ثانیه خاموش می‌شود',0,[['جت‌های کاربراتور کثیف','carb'],['شمع کربنی','plug'],['فیلتر هوا گرفته','air']],'کاربراتور و فیلتر هوا را تمیز و شمع را عوض کن.'],
+[1,'کیک آسان می‌خورد و مقاومت (فشار) حس نمی‌شود',2,[['سوپاپ‌ها کامل نمی‌بندند','vexh'],['رینگ و جداره فرسوده','rings'],['واشر سرسیلندر','gasket']],'لقی سوپاپ را بسنج؛ اگر درست بود تست کمپرس لازم است.'],
+[1,'استارت برقی نمی‌چرخد',0,[['باتری ضعیف','battery'],['شارژ نشدن (مگنتو و رگولاتور)','mag']],'ولتاژ باتری را بسنج و کابل‌ها را از نظر سُست‌بودن ببین.'],
+[1,'هندل (کیک) پایین نمی‌رود یا نیمه‌راه قفل می‌کند',2,[['دنده درگیر است یا کلاچ آزاد نمی‌شود (اول این را ببین)','pplate'],['روغن یا بنزین در سیلندر جمع شده (با بازکردن شمع آزاد می‌شود)','plug'],['پیستون به سیلندر چسبیده (گریپاژ)','piston'],['سوپاپ خم یا برخورد با پیستون بعد از پریدن زنجیر','chain'],['یاتاقان شاتون یا میل‌لنگ قفل','crankpin'],['گیربکس یا مکانیزم کیک گیر کرده','kick']],'موتور را خلاص کن و دسته‌ی کلاچ را بگیر. اگر آزاد نشد، شمع را در بیاور و دوباره هندل بزن؛ اگر حالا راحت پایین رفت مایع در سیلندر است، و اگر باز هم قفل بود زور نزن، موتور باید باز شود.'],
+[1,'هندل پایین می‌رود ولی موتور نمی‌چرخد (در خالی می‌زند)',1,[['خار یا چرخ‌دنده‌ی کیک ساییده','kick'],['فنر برگشت یا ضامن هندل خراب','kick'],['چرخ‌دنده‌ی اولیه آسیب‌دیده','primary']],'هندل را آرام پایین ببر: اگر بدون مقاومت می‌رود و برنمی‌گردد فنر برگشت مشکل دارد، و اگر وسط مسیر خالی می‌زند خار یا چرخ‌دنده‌ی کیک ساییده است.'],
+[2,'دود آبی‌رنگ از اگزوز',2,[['رینگ‌های فرسوده','rings'],['جداره‌ی خراب','liner'],['سیل ساق سوپاپ','spring']],'روغن می‌سوزد؛ سطحش را زیر نظر بگیر و برای تعمیر سیلندر اقدام کن.'],
+[2,'دود سیاه و بوی بنزین',0,[['فیلتر هوا کثیف','air'],['مخلوط غلیظ کاربراتور','carb'],['شمع کربنی','plug']],'اول فیلتر هوا را عوض و بعد کاربراتور را تنظیم کن.'],
+[2,'دود سفید غلیظ که قطع نمی‌شود',1,[['آب یا رطوبت در بنزین','carb'],['نشتی واشر سرسیلندر','gasket']],'در هوای سرد کمی بخار عادی است؛ اگر ادامه داشت باک و کاربراتور را تخلیه کن.'],
+[3,'قدرت کم و کندی شتاب',1,[['فیلتر هوا یا اگزوز گرفته','air'],['کلاچ سُر می‌خورد','clutchpack'],['کمپرس کم','rings']],'اول فیلتر هوا و اگزوز؛ بعد کلاچ را تست کن.'],
+[3,'دور بالا می‌رود ولی سرعت نه (کلاچ سُر)',1,[['دیسک‌های ساییده','clutchpack'],['فنرهای ضعیف یا سیم کلاچ بی‌لقی','pplate']],'لقی دسته‌ی کلاچ را تنظیم کن؛ بعد دیسک‌ها را بسنج.'],
+[3,'داغ‌کردن بیش از حد',2,[['روغن کم','sump'],['پره‌های کثیف و گل‌گرفته','fins'],['مخلوط رقیق','carb'],['جرقه‌ی دیر','mag']],'خاموش کن و صبر کن؛ سطح روغن را ببین و پره‌ها را تمیز کن.'],
+[3,'دنده سخت جا می‌رود یا از دنده بیرون می‌پرد',1,[['چنگک یا درام فرسوده','forks'],['درام تعویض دنده','drum'],['چرخ‌دنده‌ی لب‌پریده','gears']],'روغن را عوض و سیم کلاچ را تنظیم کن؛ اگر ماند گیربکس را باز کن.'],
+[3,'چراغ‌ها کم‌نور و باتری شارژ نمی‌شود',0,[['استاتور مگنتو','mag'],['رگولاتور خراب','battery']],'ولتاژ باتری را در دور بالا بسنج؛ باید حدود ۱۴ ولت شود.']];
+T.push(
+[4,'ترمز ضعیف است یا جیرجیر می‌کند',2,[['کفشک‌های ساییده یا چرب','brake'],['لقی زیاد سیم یا دسته','blever'],['لقی پدال یا میله‌ی عقب','brakeped']],'لقی دسته و پدال را بسنج و ضخامت و روغن‌نبودن کفشک‌ها را ببین؛ ترمز مهم‌ترین ایمنی است، مطمئن نشدی تعمیر کن.'],
+[4,'زنجیر پرصداست، تند خشک می‌شود یا می‌پرد',1,[['زنجیر شل یا بی‌روغن','dchain'],['دنده‌ی جلو یا عقب ساییده','rsprock'],['دو چرخ‌دنده هم‌خط نیستند','swing']],'لقی وسط زنجیر را بسنج (حدود دو تا سه سانتی‌متر)، روغن بزن و دندانه‌ها را ببین؛ هر سه قطعه را با هم عوض کن.'],
+[4,'فرمان سنگین، لرزان یا مایل به یک طرف است',2,[['باد تایر نامناسب','wheel'],['بلبرینگ‌های ستون فرمان','bar'],['شاخک خم یا نشتی روغن','fork'],['فریم کج یا چرخ بالانس نیست','frame']],'اول فشار باد را ببین؛ بعد چرخ جلو را در هوا بگیر و فرمان را بچرخان: اگر ناصاف است بلبرینگ ستون فرمان خراب است.'],
+[4,'تعلیق خیلی سفت یا خیلی نرم و ضربه‌دار است',1,[['روغن شاخک کم یا کثیف','fork'],['کمک‌فنر عقب نشتی دارد','shock'],['فنر خسته','shock']],'اگر روی لوله‌ی شاخک یا کمک‌فنر روغن دیدی، آب‌بندها خراب شده‌اند.'],
+[4,'بنزین نمی‌رسد و در گاز خاموش می‌شود',1,[['شیر بنزین یا توری آن گرفته','ftap'],['درپوش باک هواگیری نمی‌کند','tank'],['شناور یا سوزن‌ولو گیر کرده','cfloat']],'شیر را روی ذخیره بگذار و شیلنگ را باز کن تا ببینی بنزین می‌ریزد یا نه.'],
+[4,'گاز گیر می‌کند یا بعد از رهاکردن برنمی‌گردد',2,[['سیم گاز خشک یا زنگ‌زده','tcable'],['دسته‌ی گاز گیر کرده','grip'],['اسلاید کاربراتور گیر کرده','cslide']],'کلاچ را بگیر و سوئیچ را قطع کن؛ سیم را روغن بزن یا عوض کن.'],
+[4,'چراغ‌ها کم‌نورند، فیوز می‌سوزد یا راهنما کار نمی‌کند',0,[['اتصال‌های زنگ‌زده یا شل','wire'],['لامپ یا فلشر خراب','lights'],['رگولاتور و باتری','battery']],'فیوز را ببین و کانکتورها را تمیز کن؛ اگر دوباره سوخت، اتصال‌کوتاه در سیم‌کشی هست.']);TG.push('بدنه و کنترل‌ها');
+let tg=0;
+function faults(){$('#fchips').innerHTML=TG.map((g,i)=>`<button class="${i==tg?'on':''}" data-g="${i}">${g}</button>`).join('');$('#flist').innerHTML=T.filter(t=>t[0]==tg).map(t=>`<details><summary><b>${t[1]}</b><em class="sv${t[2]}">${SVN[t[2]]}</em></summary><p class="tag">علت‌ها به ترتیب احتمال:</p><ol>${t[3].map(c=>`<li><span>${c[0]}</span><button class="go" data-go="${c[1]}">نمایش قطعه</button></li>`).join('')}</ol><div class="chk"><b>اول این را چک کن:</b> ${t[4]}</div></details>`).join('')}
+function showPage(k){$('#px').hidden=k!='x';$('#pf').hidden=k!='f';$$('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.pg==k));scrollTo(0,0)}
+$$('.nav button').forEach(b=>b.onclick=()=>showPage(b.dataset.pg));
+$('#fchips').onclick=e=>{const b=e.target.closest('[data-g]');if(b){tg=+b.dataset.g;faults()}};
+$('#flist').onclick=e=>{const b=e.target.closest('[data-go]');if(b){showPage('x');pick(b.dataset.go)}};
+faults();
+setView(1);list();requestAnimationFrame(loop);
+</script>
+</body>
+</html>
